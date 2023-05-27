@@ -65,7 +65,6 @@ public class ClientMain {
                         if(command.equals("games")){
 
                             int Nrow = in.read();
-                            System.out.println(Nrow);
 
                             for(int i=0 ; i<Nrow ; i++){
                                 System.out.println(in.readUTF());
@@ -74,9 +73,12 @@ public class ClientMain {
                                 System.out.println();
                             }
 
-//                            command = input.nextLine();
-//                            out.writeUTF(command);
-//                            out.flush();
+                            System.out.println("inter game's name for download :");
+
+                            command = input.nextLine();
+
+                            // N.F
+                            System.out.println("done");
 
                         }
                         else if(command.equals("downleaded")){
